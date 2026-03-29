@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AquaTech | Simulador</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="assets/icon/favicon2.ico">
+</head>
+
+<body>
+
+    <!--header inicio-->
+    <div class="header">
+        <div class="container">
+            <h1 class="titulo">AquaTech</h1>
+            <ul class="navbar">
+                <li>
+                    <a href="./index.html">Inicial</a>
+                </li>
+                <li class="agora">
+                    <a href="#">Simulador</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="./login.html">Login</a>
+                </li>
+                <li>
+                    <a href="./cadastro.html">Cadastro</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--header fim-->
+
+
+    <!-- simulador inicio -->
+    <div class="simulador">
+        <div class="container">
+
+            <h2>Simulador Financeiro</h2>
+
+            <p>Digite a quantidade de litros monitorados por mês:</p>
+            <input id="input_litros" type="number" placeholder="Ex: 1000">
+
+            <p>Digite o valor médio por litro (R$):</p>
+            <input id="input_valor" type="number" placeholder="Ex: 5">
+
+            <br><br>
+
+            <button onclick="calcular()">Calcular Economia</button>
+
+            <div id="resultado"></div>
+
+        </div>
+    </div>
+    <!-- simulador fim -->
+
+
+    <!--footer inicio-->
+    <div class="footer">
+        <div class="container">
+            <h4>Feito com amor por aluno &hearts; SPTech &copy; 2024</h4>
+            <span class="version">v1.0.0</span>
+        </div>
+    </div>
+    <!--footer fim-->
+
+
+</body>
+
+</html>
+
+
+<script>
+
+function calcular() {
+
+    var litros = Number(document.getElementById("input_litros").value)
+    var valor = Number(document.getElementById("input_valor").value)
+
+    var economiaMensal = litros * valor * 0.30
+    var economiaAnual = economiaMensal * 12
+
+    document.getElementById("resultado").innerHTML = `
+    
+    <br>
+    Você pode economizar aproximadamente:
+    
+    <br><br>
+    
+    💰 Economia mensal: R$ ${economiaMensal.toFixed(2)}
+    
+    <br><br>
+    
+    📈 Economia anual: R$ ${economiaAnual.toFixed(2)}
+    
+    `
+}
+
+</script>

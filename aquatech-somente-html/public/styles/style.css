@@ -1,0 +1,244 @@
+/* RESET */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+
+/* HEADER */
+
+.header {
+    background-color: black;
+    border-bottom: 3px solid #2bb3c0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo {
+    color: #2bb3c0;
+    font-weight: 500;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.agora a {
+    color: #f7a600;
+    font-weight: bold;
+}
+
+
+/* BANNER */
+
+.banner {
+    background-image: url('../assets/imgs/bg-jelly-fish-para-home.png');
+    background-size: cover;
+    height: 350px;
+    display: flex;
+    align-items: center;
+}
+
+.banner p {
+    color: white;
+    font-size: 32px;
+    width: 250px;
+}
+
+.banner span {
+    font-weight: bold;
+}
+
+
+/* SOCIAL */
+
+.social {
+    background-color: white;
+    padding: 40px 0;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.box {
+    width: 30%;
+}
+
+.box img {
+    width: 100px;
+}
+
+.box h4 {
+    color: #f70067;
+}
+
+.box p {
+    color: #333;
+}
+
+
+/* LOGIN E CADASTRO */
+
+.login {
+    background-image: url('../assets/imgs/bg-jelly-fish-para-home.png');
+    background-size: cover;
+    height: 450px;
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    background-color: #e6e6e6;
+    width: 400px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.card h2 {
+    text-align: center;
+    color: #e64a6b;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.campo span {
+    color: #e64a6b;
+    font-weight: bold;
+}
+
+.campo input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid #2bb3c0;
+}
+
+.botao {
+    background-color: #ff2d6f;
+    color: white;
+    border: none;
+    padding: 8px;
+    width: 120px;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.botao:hover {
+    background-color: #e61e5c;
+}
+
+
+/* SIMULADOR */
+
+.simulador {
+    background-color: white;
+    padding: 40px 0;
+    min-height: 400px;
+}
+
+.simulador h2 {
+    color: #1e3a5f;
+}
+
+.simulador p {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #2bb3c0;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.version {
+    font-size: 12px;
+}
+/* SIMULADOR ESTILO CARD */
+
+.simulador {
+    background-image: url('../assets/imgs/bg-jelly-fish-para-home.png');
+    background-size: cover;
+    padding: 60px 0;
+    min-height: 500px;
+}
+
+.simulador .container {
+    background-color: #e6e6e6;
+    padding: 30px;
+    border-radius: 10px;
+    width: 500px;
+    text-align: center;
+}
+
+.simulador h2 {
+    color: #e64a6b;
+}
+
+.simulador p {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* caso tenha inputs depois */
+.simulador input {
+    width: 80%;
+    padding: 8px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 2px solid #2bb3c0;
+}
+
+.simulador button {
+    background-color: #ff2d6f;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 150px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.simulador button:hover {
+    background-color: #e61e5c;
+}
+#resultado {
+    margin-top: 20px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    color: #333;
+    font-weight: bold;
+}
